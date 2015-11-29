@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prashant.showcaseviewpager.ImageSliderFullScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fullscreen_vp"
+    tools:context="com.prashant.showcaseviewpager.ImageSliderActivity"
+    android:layout_height="match_parent"/>

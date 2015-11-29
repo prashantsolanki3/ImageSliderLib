@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageSlider">
+        <!--Next and Previous Navigation Icons-->
+        <attr name="is_NavigationIcons" format="boolean"/>
+        <!--Should Open FullScreen activity on click?-->
+        <attr name="is_OnClickOpenActivity" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImageSliderFullScreen">
+
+        <!--Next and Previous Navigation Icons-->
+        <attr name="fs_NavigationIcons" format="boolean"/>
+
+    </declare-styleable>
+    
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ImageSliderTheme"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        style="@style/ImageSliderTheme.ViewPager"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/navigationIconLeft"
+        android:src="@android:drawable/arrow_down_float"
+        style="@style/ImageSliderTheme.NavigationIcons"
+        />
+
+    <ImageView
+        android:id="@+id/navigationIconRight"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        style="@style/ImageSliderTheme.NavigationIcons"
+        android:src="@android:drawable/arrow_up_float"
+        />
+
+    <github.chenupt.springindicator.SpringIndicator
+        style="@style/ImageSliderTheme.Indicator"
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+
+</merge>

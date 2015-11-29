@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FullScreenSliderTheme" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
+
+    <style name="ImageSliderTheme">
+        <item name="is_NavigationIcons">false</item>
+        <item name="is_OnClickOpenActivity">false</item>
+    </style>
+    <style name="ImageSliderTheme.Indicator">
+        <item name="siIndicatorColor">@color/si_default_indicator_bg</item>
+        <item name="siRadiusMax">8dp</item>
+        <item name="siRadiusMin">4dp</item>
+    </style>
+    <style name="ImageSliderTheme.ViewPager">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="ImageSliderTheme.FullScreen">
+
+    </style>
+
+    <style name="ImageSliderTheme.FullScreen.Indicator" parent="ImageSliderTheme.Indicator">
+
+    </style>
+
+    <style name="ImageSliderTheme.FullScreen.ViewPager" parent="ImageSliderTheme.ViewPager">
+
+    </style>
+
+    <dimen name="navigationPaddingRight">4dp</dimen>
+    <dimen name="navigationPaddingLeft">4dp</dimen>
+
+
+    <style name="ImageSliderTheme.NavigationIcons">
+        <item name="android:paddingEnd">@dimen/navigationPaddingRight</item>
+        <item name="android:paddingRight">@dimen/navigationPaddingRight</item>
+        <item name="android:paddingLeft">@dimen/navigationPaddingLeft</item>
+        <item name="android:paddingStart">@dimen/navigationPaddingLeft</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+</resources>
