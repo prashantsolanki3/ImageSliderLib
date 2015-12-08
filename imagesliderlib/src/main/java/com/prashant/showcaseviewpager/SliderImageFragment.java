@@ -98,7 +98,6 @@ public class SliderImageFragment extends Fragment {
             public void onClick(View v) {
                 startActivityForResult(ImageSliderActivity.createIntent(getActivity(), imageUrls, pos), ImageSliderActivity.RESULT_CODE);
                 /*
-                * TODO: Send Intent to fullscreen VP activity
                 * Send List of Images,Position
                 * viewPager.getCurrentItem()
                 */

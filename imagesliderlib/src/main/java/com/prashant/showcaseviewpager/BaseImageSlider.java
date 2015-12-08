@@ -64,6 +64,9 @@ public abstract class BaseImageSlider extends RelativeLayout{
         leftNav = (ImageView) view.findViewById(R.id.navigationIconLeft);
         rightNav = (ImageView) view.findViewById(R.id.navigationIconRight);
         springIndicator = (SpringIndicator) view.findViewById(R.id.indicator);
+
+        if(imageUrls.size()<=1)
+            springIndicator.setVisibility(GONE);
     }
 
 
