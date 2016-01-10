@@ -1,13 +1,9 @@
 package com.prashant.showcaseviewpager;
 
-import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v7.graphics.Palette;
-import android.util.Log;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,10 +14,10 @@ import java.util.HashMap;
  */
 public class SliderImageAdapter extends FragmentStatePagerAdapter {
 
-    ArrayList<String> imageUrls;
-    boolean openFullscreenActivity=false;
     public PaletteGenerator paletteGenerator=null;
     public HashMap<Integer,Palette> palettes=new HashMap<>();
+    ArrayList<String> imageUrls;
+    boolean openFullscreenActivity = false;
 
     public SliderImageAdapter(FragmentManager fm) {
         super(fm);
@@ -46,8 +42,13 @@ public class SliderImageAdapter extends FragmentStatePagerAdapter {
         notifyDataSetChanged();
     }
 
-    public void addimageUrl(String url){
+    public void addImageUrl(String url) {
         this.imageUrls.add(url);
+        notifyDataSetChanged();
+    }
+
+    public void removeImageUrl(String url) {
+        this.imageUrls.remove(url);
         notifyDataSetChanged();
     }
 

@@ -142,8 +142,15 @@ public abstract class BaseImageSlider extends RelativeLayout{
     }
 
     public void addImageUri(String imageUri) {
-        sliderImageAdapter.addimageUrl(imageUri);
+        imageUrls.add(imageUri);
+        sliderImageAdapter.addImageUrl(imageUri);
     }
+
+    public void removeImageUrl(String url) {
+        imageUrls.remove(url);
+        sliderImageAdapter.removeImageUrl(url);
+    }
+
 
     protected void setOnClickListeners(){
         leftNav.setOnClickListener(new OnClickListener() {
