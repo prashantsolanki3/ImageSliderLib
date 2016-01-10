@@ -141,6 +141,10 @@ public abstract class BaseImageSlider extends RelativeLayout{
         ViewPagerUtils.init(viewPager, springIndicator);
     }
 
+    public void addImageUri(String imageUri) {
+        sliderImageAdapter.addimageUrl(imageUri);
+    }
+
     protected void setOnClickListeners(){
         leftNav.setOnClickListener(new OnClickListener() {
             @Override
